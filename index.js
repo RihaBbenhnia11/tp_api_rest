@@ -28,6 +28,7 @@ app.use(limiter);
 
 
 
+
 // Récupérer toutes les personnes
 app.get('/personnes', (req, res) => {
 db.all("SELECT * FROM personnes", [], (err, rows) => {
